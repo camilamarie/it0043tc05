@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form name="Form">
+            <label for="nationaldex">National Dex:</label>
+            <input type="number"name=""id="nationaldex"min="1"><br><br>
+            <input type="radio"id="generation1"name="generation"value="1">
+            <label for="generation1">Generation 1</label>
+            <input type="radio"id="generation2"name="generation"value="2">
+            <label for="generation2">Generation 2</label>
+            <input type="radio"id="generation3"name="generation"value="3">
+            <label for="generation3">Generation 3</label>
+            <input type="radio"id="generation4"name="generation"value="4">
+            <label for="generation4">Generation 4</label>
+            <input type="radio"id="generation5"name="generation"value="5">
+            <label for="generation5">Generation 5</label>
+            <input type="radio"id="generation6"name="generation"value="6">
+            <label for="generation6">Generation 6</label>
+            <input type="radio"id="generation7"name="generation"value="7">
+            <label for="generation7">Generation 7</label>
+            <input type="radio"id="generation8"name="generation"value="8">
+            <label for="generation8">Generation 8</label>
+            <input type="radio"id="generation9"name="generation"value="9">
+            <label for="generation9">Generation 9</label><br><br>
+            <label for="pokemonname">Pokemon Name: </label>
+            <input type="text" name=""id="pokemonname"><br><br>
+            <label for="filename">Image: </label>
+            <input type="file"id="filename"name="filename"><br><br>
+            <label for="type1">Type 1: </label>
+            <input list="type1"name="type1">
+            <datalist id="type1">
+                <option value="Normal">
+                <option value="Fire">
+                <option value="Water">
+                <option value="Electric">
+                <option value="Grass">
+                <option value="Ice">
+                <option value="Fighting">
+                <option value="Poison">
+                <option value="Ground">
+                <option value="Flying">
+                <option value="Psychic">
+                <option value="Bug">
+                <option value="Rock">
+                <option value="Ghost">
+                <option value="Dragon">
+                <option value="Dark">
+                <option value="Steel">
+                <option value="Fairy">
+            </datalist>
+            <label for="type2">Type 2: </label>
+            <input list="type2" name="type2">
+            <datalist id="type2">
+                <option value="Normal">
+                <option value="Fire">
+                <option value="Water">
+                <option value="Electric">
+                <option value="Grass">
+                <option value="Ice">
+                <option value="Fighting">
+                <option value="Poison">
+                <option value="Ground">
+                <option value="Flying">
+                <option value="Psychic">
+                <option value="Bug">
+                <option value="Rock">
+                <option value="Ghost">
+                <option value="Dragon">
+                <option value="Dark">
+                <option value="Steel">
+                <option value="Fairy">
+            </datalist><br><br>
+            <label for="evolvesfrom">Evolves from: </label>
+            <input type="text"name=""id="evolvesfrom">
+            <label for="evolvesto">Evolves to: </label>
+            <input type="text"id="eto"><br><br>
+            <label for="nickname">Nickname: </label>
+            <input type="text"name=""id="nickname"><br><br>
+            <label for="birthday">Birthday: </label>
+            <input type="date"name=""id="birthday"><br><br>
+            <input type="submit"><br><br>
+        </form>  
+        <table border="1px"width="1000px">
+            <tr>
+                <th>
+                    National Dex
+                </th>
+                <th>
+                    Generation
+                </th>
+                <th>
+                    Pokemon Name
+                </th>
+                <th>
+                    Image
+                </th>
+                <th>
+                    Type 1
+                </th>
+                <th>
+                    Type 2
+                </th>
+                <th>
+                    Evolves From
+                </th>
+                <th>
+                    Evolves To
+                </th>
+                <th>
+                    Nickname
+                </th>
+                <th>
+                    Birthday
+                </th>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0
+                </td>
+                <td>
+                    Generation Z
+                </td>
+                <td>
+                    Camila Marie Ceas
+                </td>
+                <td>
+                    <img src="https://scontent.fmnl31-1.fna.fbcdn.net/v/t39.30808-1/375303380_247748454902781_3792710666955681895_n.jpg?stp=dst-jpg_p200x200&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEdtrdm45RvOv4o1eitkkV0zeO0VLn1O-nN47RUufU76dn4VP-oNJwxMfiKDKUzTi4tdClm1J80W05UrGhvBM-7&_nc_ohc=ZHPcPbi6y2cQ7kNvgH0MTz9&_nc_ht=scontent.fmnl31-1.fna&oh=00_AfC_rCSa1koGqUR2U0alKEEdNQ6cUPsGLTdf73wTZ11dzQ&oe=6641035D" width="100" height="100" alt="Image">
+
+                </td>
+                <td bgcolor="9FA19F"colspan="2">
+                    <font color="white">Normal</font>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Camile
+                </td>
+                <td>
+                    05-08-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0148
+                </td>
+                <td>
+                    Generation 1
+                </td>
+                <td>
+                    Dragonair
+                </td>
+                <td>
+                    <img src="https://archives.bulbagarden.net/media/upload/0/0d/0148Dragonair.png" width="100" height="100" alt="Dragonair">
+                </td>
+                <td bgcolor="5060E1" colspan="2">
+                    <font color="white">Dragon</font>
+                </td>
+                <td>
+                    Dratini
+                </td>
+                <td>
+                    Dragonite
+                </td>
+                <td>
+                    Ahas
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0143
+                </td>
+                <td>
+                    Generation 1
+                </td>
+                <td>
+                    Snorlax
+                </td>
+                <td>
+                    <img
+                        src="https://archives.bulbagarden.net/media/upload/3/3f/0143Snorlax.png" width="100" height="100" alt="Snorlax">
+                </td>
+                <td bgcolor="9FA19F" colspan="2">
+                    <font color="white">Normal</font>
+                </td>
+                <td>
+                    Munchlax
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Oso
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0172
+                </td>
+                <td>
+                    Generation 2
+                </td>
+                <td>
+                    Pichu
+                </td>
+                <td>
+                    <img
+                        src="https://archives.bulbagarden.net/media/upload/f/f3/0172Pichu.png" width="100" height="100" alt="Pichu">
+                </td>
+                <td bgcolor="FAC000" colspan="2">
+                    <font color="white">Electric</font>
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Pikachu
+                </td>
+                <td>
+                    Daga
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0386
+                </td>
+                <td>
+                    Generation 3
+                </td>
+                <td>
+                    Deoxys
+                </td>
+                <td>
+                    <img
+                        src="https://archives.bulbagarden.net/media/upload/d/d7/0386Deoxys.png" width="100" height="100" alt="Deoxys">
+                </td>
+                <td bgcolor="EF4179" colspan="2">
+                    <font color="white">Psychic</font>
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Elyen
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0251
+                </td>
+                <td>
+                    Generation 2
+                </td>
+                <td>
+                    Celebi
+                </td>
+                <td>
+                    <img
+                        src="https://archives.bulbagarden.net/media/upload/3/3f/0251Celebi.png" width="100" height="100" alt="Celebi">
+                </td>
+                <td bgcolor="EF4179">
+                    <font color="white">Psychic</font>
+                </td>
+                <td bgcolor="3FA129">
+                    <font color="white">Grass</font>
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Sibuyas
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0174
+                </td>
+                <td>
+                    Generation 2
+                </td>
+                <td>
+                    Igglybuff
+                </td>
+                <td>
+                    <img
+                        src="https://archives.bulbagarden.net/media/upload/0/06/0174Igglybuff.png" width="100" height="100" alt="Igglybuff">
+                </td>
+                <td bgcolor="9FA19F">
+                    <font color="white">Normal</font>
+                </td>
+                <td bgcolor="EF70EF">
+                    <font color="white">Fairy</font>
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Jigglypuff
+                </td>
+                <td>
+                    Lobo
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0131
+                </td>
+                <td>
+                    Generation 1
+                </td>
+                <td>
+                    Lapras
+                </td>
+                <td>
+                    <img
+                        src="https://archives.bulbagarden.net/media/upload/9/99/0131Lapras.png" width="100" height="100" alt="Lapras">
+                </td>
+                <td bgcolor="2980EF">
+                    <font color="white">Water</font>
+                </td>
+                <td bgcolor="3DCEF3">
+                    <font color="white">Ice</font>
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Plesiosawr
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0468
+                </td>
+                <td>
+                    Generation 4
+                </td>
+                <td>
+                    Togekiss
+                </td>
+                <td>
+                    <img
+                        src="https://archives.bulbagarden.net/media/upload/8/8f/0468Togekiss.png" width="100" height="100" alt="Togekiss">
+                </td>
+                <td bgcolor="EF70EF">
+                    <font color="white">Fairy</font>
+                </td>
+                <td bgcolor="81B9EF">
+                    <font color="white">Flying</font>
+                </td>
+                <td>
+                    Togetic
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Kalapati
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    #0257
+                </td>
+                <td>
+                    Generation 3
+                </td>
+                <td>
+                    Blaziken
+                </td>
+                <td>
+                    <img
+                        src="https://archives.bulbagarden.net/media/upload/c/c0/0257Blaziken.png" width="100" height="100" alt="Blaziken">
+                </td>
+                <td bgcolor="E62829">
+                    <font color="white">Fire</font>
+                </td>
+                <td bgcolor="FF8000">
+                    <font color="white">Fighting</font>
+                </td>
+                <td>
+                    Combusken
+                </td>
+                <td>
+                    -
+                </td>
+                <td>
+                    Manok
+                </td>
+                <td>
+                    01-01-2024
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
+    </center>
+</body>
+</html>
