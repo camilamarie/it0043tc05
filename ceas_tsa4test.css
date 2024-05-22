@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-seif;
+}
+
+body{
+    background-image: url(pokemonbg.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: 90wv;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    width:30%;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1rem 1rem;
+    vertical-align:top;
+    border-width: 10px;
+    height:auto;
+    box-shadow: 10px 10px 10px black;
+}
+
+.image{
+    
+}
