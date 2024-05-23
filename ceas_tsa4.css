@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+body {
+    background-image: url(https://images8.alphacoders.com/395/thumb-1920-395682.png);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-position: center;
+    background-size: contain;
+} 
+.container {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    background-color: #fff;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    
+}
+.image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+.card .details1 {
+    background-color: rgb(250, 88, 88);
+    padding: 15px;
+}
+.card .details1 .name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.card .details1 .type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+.card .details1 .description {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+.card .act1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: rgb(250, 88, 88);
+}
+.card .act1 button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card .act1 button:hover {
+    background-color: #ddd;
+}
+.card .details2 {
+    background-color: rgb(105, 194, 230);
+    padding: 15px;
+}
+.card .details2 .name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.card .details2 .type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+.card .details2 .description {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+.card .act2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color:rgb(105, 194, 230);
+}
+.card .act2 button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card .act2 button:hover {
+    background-color: #ddd;
+}
+.card .details3 {
+    background-color: rgb(233, 66, 197);
+    padding: 15px;
+}
+.card .details3 .name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.card .details3 .type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+.card .details3 .description {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+.card .act3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color:rgb(233, 66, 197);
+}
+.card .act3 button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card .act3 button:hover {
+    background-color: #ddd;
+}
+.card .details4 {
+    background-color:rgb(233, 66, 197);
+    padding: 15px;
+}
+.card .details4 .name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.card .details4 .type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+.card .details4 .description {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+.card .act4 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color:rgb(233, 66, 197);
+}
+.card .act4 button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card .act4 button:hover {
+    background-color: #ddd;
+}
+.card .details5 {
+    background-color: rgb(122, 122, 122);
+    padding: 15px;
+}
+.card .details5 .name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.card .details5 .type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+.card .details5 .description {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+.card .act5 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color:rgb(122, 122, 122);
+}
+.card .act5 button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card .act5 button:hover {
+    background-color: #ddd;
+}
+.card .details6 {
+    background-color: rgb(139, 117, 236);
+    padding: 15px;
+}
+.card .details6 .name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.card .details6 .type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+.card .details6 .description {
+    font-size: 0.9em;
+    color: #ffffff;
+}
+.card .act6 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: rgb(139, 117, 236);
+}
+.card .act6 button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card .act6 button:hover {
+    background-color: #ddd;
+}
+.addpokemon {
+    background-color: #23ec29;
+    color: white;
+}
+.releasepokemon {
+    background-color: #ff2617;
+    color: white;
+}
