@@ -6,15 +6,6 @@
     box-sizing: border-box;
     transition: 0.5s all ease;
     
-body{
-    background-image: url(pokeballbg.png);
-    width: 100%;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 .flex-container{
     width: 100%;
@@ -24,7 +15,7 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    background-image: url(pokeballbg.png);
+    background-image: url(pokeball.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,6 +87,10 @@ img{
 @media screen and (max-width: 800px) {
     .box:hover {
         background-image: url(pokeballbg.png);
+        background-size: cover;
+        background-position: center;
+        transition: ease-in;
+        transition-duration: 0.5s;
     }
 
     .box {
