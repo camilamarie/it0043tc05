@@ -17,19 +17,23 @@ body{
 }
 
 .flex-container{
-    width: 80vw;
-    margin: 2rem auto;
+    width: 100%;
     display: flex;
-    gap: 15px;
-    flex-flow: row;
+    border: 2px solid rgb(103, 45, 84);
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+    gap: 10px;
+    background-image: url(pokeballbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }   
 
 img{
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
+    width: 300px;
+
 }
 
 .name {
@@ -41,13 +45,9 @@ img{
 }
     
 .box {
-    display: flex;
-    width: 20%;
-    align-items: center;
-    padding: 1.5%;
-    image-orientation: inherit;
-    content: inherit;
-    box-shadow: 5px 5px 3px black;
+    width: auto;
+    height: auto;
+    border: 3px solid grey;
 }
 
 .yellow{
@@ -94,28 +94,32 @@ img{
 
 
 @media screen and (max-width: 800px) {
-    .flex-container {
-        width: 100%;
-        margin: 10px;
-        display: flex;
-        gap: 5px;
-        flex-flow: column;
-        flex-wrap: wrap;
-        justify-items: center;
+    .box:hover {
+        background-image: url(pokeballbg.png);
     }
 
-     .box:hover {    
-        background-image: url(pokeballbg.png);
+    .box {
+        width: 90%;
+        margin: 10px;
         height: auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; 
+        flex-flow: row;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
     }
-    
+
+    .flex-container {
+        width: 100%;
+        display: flex;
+        border: 2px solid rgb(103, 45, 84);
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-items: center;
+        gap: 5px;
+    }
+
     img {
-        max-width: 20%;
-        max-height: 20%;
-        overflow: hidden;
+        width: 15%;
     }
 
     .name {
@@ -123,76 +127,39 @@ img{
         display: flex;
         font-size: xx-large;
     }
-    
-    .box {
-        display: block;
-        font-size: 200%;
-        font-family: Play;
-        font-weight: bold;
-        color: white;   
-        text-shadow: 1px 1px 5px black;
-    }
 
     .pokemon {
-        display: block;
-        width: 10%;
-    }
-
-     .name {
-        font-family: "Play", sans-serif;
+        width: 18%;
+        height: 90%;
+        margin-top: 15px;
         display: flex;
-        font-size: xx-large;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .flex-container {
-        width: 100%;
-        margin: 2rem auto;
-        display: flex;
-        gap: 10px;
-        flex-flow: column;
-        flex-wrap: wrap;
-        justify-items: center;
-    }   
-    
-    img {
-        max-width: 50%;
-        overflow: hidden;
-    }
-    
+@media screen and (max-width: 650px) {
     .box {
-        display: flex;
-        width: 90%;
-        height: auto;
+        width: 100%;
         margin: 10px;
-        align-items: center;
-        image-orientation: inherit;
-        content: inherit;
-        box-shadow: 5px 5px 3px black;
+        height: auto;
+        border: 3px solid grey;
         flex-flow: column;
         justify-content: space-between;
+        display: flex;
+        align-items: center;
     }
 
-    .box:hover {    
-        background-image: url(pokeballbg.png);
-        height: auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; 
-    }
-
-    .pokemon{
+    .pokemon {
         display: none;
     }
 
-    .name{
-        display: block;
-        font-size: 200%;
-        font-family: Play;
-        font-weight: bold;
-        color: white;   
-        text-shadow: 1px 1px 5px black;
+    img {
+        width: 50%;
+    }
+
+    .name {
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        font-size: xx-large;
     }
 
 .psychic,
