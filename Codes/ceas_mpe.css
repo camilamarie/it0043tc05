@@ -17,18 +17,19 @@ body{
     background-image: url(pokeball.png);
     background-position: center;
     background-size: cover;
-    border: 2px solid rgb(103, 45, 84);
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
+    width: 80vw;
+    margin: 2rem auto;
     display: flex;
+    gap: 15px;
+    flex-flow: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
+    justify-content: center;
+}   
 
 img{
-    width: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 .pokemon{
@@ -87,6 +88,7 @@ img{
 @media screen and (max-width: 800px) {
     .flex-container {
         width: 100%;
+        margin: 10px;
         display: flex;
         border: 2px solid rgb(103, 45, 84);
         flex-wrap: wrap;
@@ -94,9 +96,19 @@ img{
         justify-items: center;
         gap: 5px;
     }
+
+     .box:hover {    
+        background-image: url(pokeballbg.png);
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
     
     img {
-        width: 15%;
+        max-width: 20%;
+        max-height: 20%;
+        overflow: hidden;
     }
 
     .name {
@@ -106,28 +118,20 @@ img{
     }
     
     .box {
-        width: 90%;
-        margin: 10px;
-        height: auto;
-        flex-flow: row;
-        justify-content: space-between;
         display: flex;
-        align-items: center;
-    }
-
-    .box:hover {    
-        background-image: url(hovimg.jpg);
+        width: 90%;
         height: auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; 
+        margin: 10px;
+        align-items: center;
+        image-orientation: inherit;
+        content: inherit;
+        box-shadow: 5px 5px 3px black;
+        justify-content: space-between
     }
 
     .pokemon {
-        width: 18%;
-        height: 90%;
-        margin-top: 15px;
-        display: flex;
+        display: block;
+        width: 10%;
     }
 
      .name {
