@@ -1,0 +1,123 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    transition: 0.5s ease-in;
+    
+body{
+    background-image: url(pokeballbg.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: cover;
+}
+
+.container{
+    background-image: url(pokeball.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img{
+    width: 250px;
+}
+
+p{
+    display: none;
+}
+
+.pokemon{
+    display: none;
+}
+    
+.box{
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    border-width: 10px;
+    margin: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.60) 0px 5px 15px;
+}
+
+.yellow{
+    background-color: #dfbe2a;
+}
+
+.green{
+    background-color: #12ee49;
+}
+
+.red{
+    background-color: #9b4919;
+}
+    
+.blue{
+    background-color: #24ccff;
+}
+    
+.brown{
+    background-color: #e9902a;
+}
+    
+.pink{
+    background-color: #d607ff;
+}
+
+@media (max-width: 1010px){
+    .container{
+        flex-direction: column;
+    }
+    .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box:hover{
+        background-image: url(hoverbg.jpg);
+        background-size: cover;
+        background-position: center;
+        transition: ease-in;
+        transition-duration: 0.5s;
+    }
+    img{
+        width: 50px;
+    }
+    p{
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 700;
+        color: aliceblue;
+        text-shadow: 2px 2px 4px black;
+    }
+    .pokemon{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 450px){
+    
+    .container{
+        flex-direction: column;
+    }
+    .box{
+        text-align: center;
+        display: block;
+    }
+    img{
+        width: 200px;
+    }
+    .pokeball{
+        display: none;
+    }
+    p{
+        display: block;
+    }
+}
