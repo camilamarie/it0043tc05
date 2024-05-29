@@ -16,9 +16,9 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 10px;
-    gap: 10px;
+    grid-template-columns: repeat(4, 2fr);
+    padding: 60px;
+    gap: 60px;
 }
 
 .grid-item{
@@ -31,8 +31,8 @@ body{
 }
 
 .grid-item img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 70%;
+    max-height: 70%;
 }
 
 .grid-item:hover{
@@ -42,7 +42,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(gradient.jpg);
+    background-image: url(gradient.png);
 }
 
 .pokemon-name-container{
@@ -58,12 +58,13 @@ body{
 }
 
 .pokemon-name{
-    bottom: 10px;
-    font-size: ;
+    bottom: 15px;
+    font-style: normal;
+    font-size: 35px;
     font-weight: bold;
-    color:brown;
-    padding: 5px;
-    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .pokeball-icon{
@@ -106,9 +107,11 @@ body{
     }
 }
 
-
-
-
+@media (max-width: 100px) {
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 
 .abra{
     background-color: #dfbe2a;
@@ -146,3 +149,4 @@ body{
 .pidgey{
     background-color: #be7622;
 }
+
