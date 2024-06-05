@@ -1,61 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
-    font-family: "Josefin Sans";
-    color: black;
+    font-family: "Ubuntu Sans";
+    color: rgb(48, 48, 48);
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+html {
+    min-height: 100%
+    margin: 0;
 }
 
 body {
     display: flex;
+    min-height: 100%
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+div {
+    width: 100%;
+}
 
 .koromon-container {
-    width: 100vw;
-    height: 100vh;
-    padding: 20px;
+    width: 200vw;
+    height: 200vh;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 
 .digi-card {
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px black;
-    padding: 20px;
+    border-width: 2px;
+    border-style: inherit;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px black;
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
     text-align: center;
 }
@@ -65,56 +51,56 @@ body {
 }
 
 .digi-img {
-    width: 80px;
-    margin-bottom: 10px;
+    width: 200px;
+    margin-bottom: 30px;
 }
 
 .name {
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 500;
 }
 
-.nn {
-    font-size: 1.5rem;
+.nname {
+    font-size: 2rem;
 }
 
-.digi-desc, .digi-desc2 {
+.digi-descript, .digi-descript2 {
     padding: 5px;
     font-size: 15px;
     margin-bottom: 10px;
     opacity: 100%;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 #koromon {
-    background-color: rgb(218, 227, 243);
+    background-color: rgb(240, 169, 234);
     grid-column: 1/3;
     grid-row: 1/2;
 }
 
 #tanemon {
-    background-color: rgb(255, 80, 80);
+    background-color: rgb(131, 255, 162);
 }
 
-#mon {
-    background-color: rgb(119, 35, 55);
+#wanyamon {
+    background-color: rgb(116, 178, 250);
 }
 
-#mon {
-    background-color: rgb(255, 204, 153);
+#nyaromon {
+    background-color: rgb(250, 248, 158);
     grid-column: 2/4;
     grid-row: 2/3;
 }
 
-#mon {
-    background-color: rgb(82, 82, 82);
+#tsunomon {
+    background-color: rgba(252, 185, 85, 0.74);
     grid-column: 4/5;
     grid-row: 1/3;
 }
 
-@media (max-width: 950px) {
-    .sonic-container {
+@media (max-width: 940px) {
+    .koromon-container {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -128,28 +114,28 @@ body {
         grid-row: 1/2;
     }
 
-    #mon {
+    #wanyamon {
         grid-column: 1/2;
         grid-row: 2/3;
     }
 
-    #mon {
+    #nyaromon {
         grid-column: 2/3;
         grid-row: 2/3;
     }
 
-    #mon {
+    #tsunomon {
         grid-column: 1/3;
         grid-row: 3/4;
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 740px) {
     .koromon-container {
         grid-template-columns: 1fr;
     }
 
-    #koromon, #tanemon, #mon, #mon, #mon {
+    #koromon, #tanemon, #wanyamon, #nyaromon, #tsunomon {
         grid-column: 1/2;
         grid-row: auto;
     }
