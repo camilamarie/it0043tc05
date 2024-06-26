@@ -2,102 +2,108 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 
 body {
     background-image: url(drbg.jpg);
     background-size: cover;
     display: grid;
-    background-color: #f3c2c2;
+    background-color: rgb(54, 34, 7);
     justify-content: center;
     align-items: center;
     gap: 60px;
 }
 
-#layout {
+#flexbox-menu {
     grid-column: 1;
     width: 250px;
     height:fit-content;
-    background-color: azure;
-    border: black 3px solid;
+    background-color: rgb(214, 152, 255);
+    border: rgb(58, 5, 68) 5px solid;
     align-content: center;
     text-align: center;
     padding-bottom: 5px;
 }
 
-#box-container {
-    border: black 3px solid;
+#flex-container {
+    border: rgb(57, 1, 68) 10px solid;
     background-image: url("drbg1.jpg");
     background-size: cover;
     background-position: center;
     grid-column: 2;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: none;
     align-items: center;
-    height: 785px;
-    width: 785px;
+    height: 940px;
+    width: 940px;
     gap: 0px;
 }
 
-#number-1 {
-    background: url("angry_dr.gif");
+#box1 {
+    background: url("sleepy_dr.gif");
     background-size: contain;
-    border: green 2px solid;
+    border: rgb(56, 6, 58) 7px solid;
     font-size: 3rem;
+    color:rgb(92, 9, 148);
     border-radius: 5px;
     width: 80px;
     height: 80px;
     text-align: center;
+    background-color: rgb(162, 0, 255);
     font-weight: bold;
     align-content: center;
     flex-grow: 0;
-    text-shadow: 0px 0px 5px #ffff;
+    text-shadow: 5px 5px 5px #000000;
 }
 
-#number-2 {
+#box2 {
     background: url("cheeron_dr.gif");
     background-size: contain;
-    border: rgb(128, 9, 0) 2px solid;
+    border: rgb(56, 6, 58) 7px solid;
     font-size: 3rem;
+    color:rgb(92, 9, 148);
     border-radius: 5px;
     width: 80px;
     height: 80px;
     text-align: center;
+    background-color: rgb(162, 0, 255);
     font-weight: bold;
     align-content: center;
     flex-grow: 0;
-    text-shadow: 0px 0px 5px #ffff;
+    text-shadow: 5px 5px 5px #000000;
 }
 
-#number-3 {
-    background: url("eat_dr.gif");
+#box3 {
+    background: url("angry_dr.gif");
     background-size: contain;
-    border: rgb(156, 80, 45) 2px solid;
+    border: rgb(56, 6, 58) 7px solid;
     font-size: 3rem;
+    color:rgb(92, 9, 148);
     border-radius: 5px;
     width: 80px;
     height: 80px;
     text-align: center;
+    background-color: rgb(162, 0, 255);
     font-weight: bold;
     align-content: center;
     flex-grow: 0;
-    text-shadow: 0px 0px 5px #ffff;
+    text-shadow: 5px 5px 5px #000000;
 }
 
 button{
-    border: darkgreen 2px solid;
+    border: rgb(56, 6, 58) 6px solid;
     color: white;
-    background-color: green;
+    background-color: rgb(109, 7, 168);
+    font-weight: bold;
     border-radius: 5px;
     width: 100px;
     margin: 5px;
 }
 
-.rst{
+.reset{
     width: 225px;
 }
 
@@ -108,25 +114,25 @@ button{
     justify-content: center;
 }
 
-.flexdir{
+.flex-direction{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.justifycon{
+.justify-content{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.alignitem{
+.align-item{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.flexgrow{
+.flex-grow{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
