@@ -1,87 +1,87 @@
-let x = document.getElementById("flex-container");
-let b1 = document.getElementById("box1");
-let b2 = document.getElementById("box2");
-let b3 = document.getElementById("box3");
+let z = document.getElementById("flex-container");
+let bx1 = document.getElementById("box1");
+let bx2 = document.getElementById("box2");
+let bx3 = document.getElementById("box3");
 let grow = 0;
 
 function reset() {
-    b1.style.flexGrow = "0";
-    b2.style.flexGrow = "0";
-    b3.style.flexGrow = "0";
-    x.style.justifyContent = "start";
-    x.style.alignItems = "start";
-    x.style.flexDirection = "row";
-    x.style.gap = "0";
+    bx1.style.flexGrow = "0";
+    bx2.style.flexGrow = "0";
+    bx3.style.flexGrow = "0";
+    z.style.justifyContent = "start";
+    z.style.alignItems = "start";
+    z.style.flexDirection = "row";
+    z.style.gap = "0";
 }
 
 function gap(gapinput) {
-    x.style.gap = gapinput + "px";
+    z.style.gap = gapinput + "px";
 }
 
-function flexDir(flexdirinput) {
+function flexDirection(flexdirinput) {
     if (flexdirinput == 1) {
-        x.style.flexDirection = 'row';
+        z.style.flexDirection = 'row';
     }
     else if (flexdirinput == 2) {
-        x.style.flexDirection = 'column';
+        z.style.flexDirection = 'column';
     }
 }
 
-function justifyCon(justifyconinput) {
+function justifyContent(justifyconinput) {
     if (justifyconinput == 1) {
-        x.style.justifyContent = 'start';
+        z.style.justifyContent = 'start';
     }
     else if (justifyconinput == 2) {
-        x.style.justifyContent = 'center';
+        z.style.justifyContent = 'center';
     }
     else if (justifyconinput == 3) {
-        x.style.justifyContent = 'end';
+        z.style.justifyContent = 'end';
     }
     else if (justifyconinput == 4) {
-        x.style.justifyContent = 'space-between';
+        z.style.justifyContent = 'space-between';
     }
     else if (justifyconinput == 5) {
-        x.style.justifyContent = 'space-around';
+        z.style.justifyContent = 'space-around';
     }
     else if (justifyconinput == 6) {
-        x.style.justifyContent = 'space-evenly';
+        z.style.justifyContent = 'space-evenly';
     }
 }
 
 function alignItems(alignitemsinput) {
     if (alignitemsinput == 1) {
-        x.style.alignItems = 'start';
+        z.style.alignItems = 'start';
     }
     else if (alignitemsinput == 2) {
-        x.style.alignItems = 'center';
+        z.style.alignItems = 'center';
     }
     else if (alignitemsinput == 3) {
-        x.style.alignItems = 'end';
+        z.style.alignItems = 'end';
     }
 }
 
 function flexGrow(flexgrowinput) {
     if (flexgrowinput == 1) {
         grow = 0
-        b1.style.flexGrow = grow;
-        b2.style.flexGrow = grow;
-        b3.style.flexGrow = grow;
+        bx1.style.flexGrow = grow;
+        bx2.style.flexGrow = grow;
+        bx3.style.flexGrow = grow;
     }
     else if (flexgrowinput == 2) {
-        b1.style.flexGrow = Number(1) + Number(b1.style.flexGrow);
-        b2.style.flexGrow = Number(1) + Number(b2.style.flexGrow);
-        b3.style.flexGrow = Number(1) + Number(b3.style.flexGrow);
+        bx1.style.flexGrow = Number(1) + Number(bx1.style.flexGrow);
+        bx2.style.flexGrow = Number(1) + Number(bx2.style.flexGrow);
+        bx3.style.flexGrow = Number(1) + Number(bx3.style.flexGrow);
     }
 }
 
-function boxOneGrow(boxoneinput) {
-    b1.style.flexGrow = boxoneinput;
+function box1grow(box1input) {
+    bx1.style.flexGrow = box1input;
 }
 
-function boxTwoGrow(boxtwoinput) {
-    b2.style.flexGrow = boxtwoinput;
+function box2grow(box2input) {
+    bx2.style.flexGrow = box2input;
 }
 
-function boxThreeGrow(boxthreeinput) {
-    b3.style.flexGrow = boxthreeinput;
+function box3grow(box3input) {
+    bx3.style.flexGrow = box3input;
 }
