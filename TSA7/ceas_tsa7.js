@@ -1,17 +1,17 @@
-let x = document.getElementById("container");
-let b1 = document.getElementById("item-1");
-let b2 = document.getElementById("item-2");
-let b3 = document.getElementById("item-3");
+let x = document.getElementById("flex-container");
+let b1 = document.getElementById("box1");
+let b2 = document.getElementById("box2");
+let b3 = document.getElementById("box3");
 let grow = 0;
 
 function reset() {
-    x.style.flexDirection = "row";
-    x.style.justifyContent = "start";
-    x.style.alignItems = "start";
-    x.style.gap = "0";
     b1.style.flexGrow = "0";
     b2.style.flexGrow = "0";
     b3.style.flexGrow = "0";
+    x.style.justifyContent = "start";
+    x.style.alignItems = "start";
+    x.style.flexDirection = "row";
+    x.style.gap = "0";
 }
 
 function gap(gapinput) {
