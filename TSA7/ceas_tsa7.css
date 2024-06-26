@@ -12,7 +12,7 @@ body {
     background-color: #f3c2c2;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 60px;
 }
 
 #layout {
@@ -101,7 +101,7 @@ button{
     width: 225px;
 }
 
-.gp{
+.gap{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
