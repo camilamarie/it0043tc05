@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="ceas_tsa7.css">
     <title>Flexbox Simulator</title>
 </head>
-
 <body>
+     <div id="box-container">
+        <div id="number-1">
+            1
+        </div>
+        <div id="number-2">
+            2
+        </div>
+        <div id="number-3">
+            3
+        </div>
+    </div>
     <div id="layout">
-        <button onclick="reset()" class="reset">Reset Flexbox</button>
-        <div class="gap">
-            <label for="inputgap">Gap</label>
-            <input type="number" min="0" max="250" oninput="gap(this.value)">
+        <button onclick="reset()" class="rst">Reset Flexbox</button>
+        <div class="gp">
+            <label for="inputgp">Gap</label>
+            <input type="number" min="0" max="250" oninput="gp(this.value)">
         </div>
         <h2>Flex Direction</h2>
         <div class="flexdir">
@@ -49,17 +59,6 @@
                 <label for="grow3">Box 3</label>
                 <input type="number" name="" id="grow3" oninput="boxThreeGrow(this.value)">
             </div>
-        </div>
-    </div>
-    <div id="container">
-        <div id="item-1">
-            1
-        </div>
-        <div id="item-2">
-            2
-        </div>
-        <div id="item-3">
-            3
         </div>
     </div>
     <script src="ceas_tsa7.js"></script>
