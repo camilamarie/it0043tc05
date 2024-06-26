@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-image: url(drbg.jpg);
+    background-size: cover;
+    display: grid;
+    background-color: burlywood;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#layout {
+    grid-column: 1;
+    width: 250px;
+    height:fit-content;
+    background-color: azure;
+    border: black 3px solid;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#container {
+    border: black 3px solid;
+    background-image: url("drbg1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    height: 785px;
+    width: 785px;
+    gap: 0px;
+}
+
+#item-1 {
+    background: url("angry_dr.gif");
+    background-size: contain;
+    border: green 2px solid;
+    font-size: 3rem;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+    flex-grow: 0;
+    text-shadow: 0px 0px 5px #ffff;
+}
+
+#item-2 {
+    background: url("cheeron_dr.gif");
+    background-size: contain;
+    border: rgb(128, 9, 0) 2px solid;
+    font-size: 3rem;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+    flex-grow: 0;
+    text-shadow: 0px 0px 5px #ffff;
+}
+
+#item-3 {
+    background: url("eat_dr.gif");
+    background-size: contain;
+    border: rgb(156, 80, 45) 2px solid;
+    font-size: 3rem;
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background-color: green;
+    font-weight: bold;
+    align-content: center;
+    flex-grow: 0;
+    text-shadow: 0px 0px 5px #ffff;
+}
+
+button{
+    border: darkgreen 2px solid;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    width: 100px;
+    margin: 5px;
+}
+
+.reset{
+    width: 225px;
+}
+
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flexdir{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.justifycon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.alignitem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flexgrow{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
