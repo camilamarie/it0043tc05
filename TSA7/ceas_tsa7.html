@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ceas.css">
+    <title>Flexbox Simulator</title>
+</head>
+
+<body>
+    <div id="layout">
+        <button onclick="reset()" class="reset">Reset Flexbox</button>
+        <div class="gap">
+            <label for="inputgap">Gap</label>
+            <input type="number" min="0" max="250" oninput="gap(this.value)">
+        </div>
+        <h2>Flex Direction</h2>
+        <div class="flexdir">
+            <button onclick="flexDir(1)">Row</button>
+            <button onclick="flexDir(2)">Column</button>
+        </div>
+        <h2>Justify Content</h2>
+        <div class="justifycon">
+            <button onclick="justifyCon(1)">Start</button>
+            <button onclick="justifyCon(2)">Center</button>
+            <button onclick="justifyCon(3)">End</button>
+            <button onclick="justifyCon(4)">Space Between</button>
+            <button onclick="justifyCon(5)">Space Around</button>
+            <button onclick="justifyCon(6)">Space Evenly</button>
+        </div>
+        <h2>Align Items</h2>
+        <div class="alignitem">
+            <button onclick="alignItems(1)">Start</button>
+            <button onclick="alignItems(2)">Center</button>
+            <button onclick="alignItems(3)">End</button>
+        </div>
+        <h2>Flex Grow</h2>
+        <div class="flexgrow">
+            <button onclick="flexGrow(1)">Reset</button>
+            <button onclick="flexGrow(2)">Grow All</button>
+            <div>
+                <label for="grow1">Box 1</label>
+                <input type="number" name="" id="grow1" oninput="boxOneGrow(this.value)">
+                <br>
+                <label for="grow2">Box 2</label>
+                <input type="number" name="" id="grow2" oninput="boxTwoGrow(this.value)">
+                <br>
+                <label for="grow3">Box 3</label>
+                <input type="number" name="" id="grow3" oninput="boxThreeGrow(this.value)">
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="item-1">
+            1
+        </div>
+        <div id="item-2">
+            2
+        </div>
+        <div id="item-3">
+            3
+        </div>
+    </div>
+    <script src="ceas_tsa7.js"></script>
+</body>
+
+</html>
